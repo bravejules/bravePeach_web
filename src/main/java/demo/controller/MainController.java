@@ -17,4 +17,10 @@ public class MainController {
         logger.info("index.....");
         return "home";
     }
+
+    @RequestMapping("/login.do")
+    public String Login(Model model) throws Exception {
+        logger.info("index.....");
+        return "login";
+    }
 }

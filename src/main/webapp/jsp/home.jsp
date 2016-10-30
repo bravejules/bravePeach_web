@@ -35,6 +35,7 @@
             background-size: cover;
             width: 50px;
             height: 50px;
+            cursor: pointer;
         }
         #content {
             margin-top : 28%;
@@ -78,7 +79,6 @@
             z-index: 1000;
             cursor: pointer;
         }
-
     </style>
 </head>
 <body>
@@ -99,7 +99,7 @@
 <%--컨텐트 영역--%>
     <div id="content">
         <div class="prologue">
-            <p>여행은 함께하는 거야</p>
+            <%--<p>여행은 함께하는 거야</p>--%>
             <div class="buttons">
                 <a href="#"><button class="_start_guide">가이드로 시작하기</button></a>
                 <a href="#"><button class="_start_tour">여행자로 시작하기</button></a>
