@@ -3,6 +3,10 @@
 <head>
     <title>Title</title>
     <style>
+        html {
+            background-image: url('/img/main_img.png');
+            background-size: cover;
+        }
         button {
             font-size: 1.5rem;
         }
@@ -40,6 +44,7 @@
         .content_bottom {
             position: fixed;
             bottom: 0;
+            left: 0;
             height: 13%;
             width: 100%;
             z-index: 0;
