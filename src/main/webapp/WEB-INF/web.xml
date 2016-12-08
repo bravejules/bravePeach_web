@@ -7,7 +7,7 @@
 
   <context-param>
     <param-name>contextConfigLocation</param-name>
-    <param-value>classpath:spring/dispatcher-servlet.xml</param-value>
+    <param-value>classpath:spring/applicationContext.xml</param-value>
   </context-param>
 
   <servlet>
@@ -82,4 +82,8 @@
     <filter-name>encodingFilter</filter-name>
     <url-pattern>/*</url-pattern>
   </filter-mapping>
+
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
 </web-app>

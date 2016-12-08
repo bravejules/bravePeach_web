@@ -12,15 +12,4 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class MainController {
     protected Logger logger = Logger.getLogger(this.getClass());
 
-    @RequestMapping("/main.do")
-    public String Index(Model model) throws Exception {
-        logger.info("index.....");
-        return "home";
-    }
-
-    @RequestMapping("/login.do")
-    public String Login(Model model) throws Exception {
-        logger.info("index.....");
-        return "login";
-    }
 }
