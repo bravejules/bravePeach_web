@@ -9,6 +9,6 @@ import org.springframework.stereotype.Repository;
 
 public interface UserInterface {
 
-    @Select("select 1")
+    //@Select("select 1")
     String selectTest();
 }

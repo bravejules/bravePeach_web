@@ -10,7 +10,7 @@
     <!--jingermans.cafe24.com-->
     <bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource" destroy-method="close">
         <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
-        <property name="url" value="jdbc:mysql://103.60.126.50:3306"/>
+        <property name="url" value="jdbc:mysql://103.60.126.50:3306/bravepeach"/>
         <property name="username" value="root"/>
         <property name="password" value="cr0323**"/>
         <property name="maxIdle" value="10"/>
