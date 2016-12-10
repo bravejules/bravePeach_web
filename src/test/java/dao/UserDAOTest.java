@@ -22,7 +22,7 @@ public class UserDAOTest extends TestCase {
 
     @Test
     public void testName() throws Exception {
-        userDao.selectTest();
+        System.out.println(userDao.selectTest());
 
     }
 
