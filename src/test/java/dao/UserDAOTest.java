@@ -30,4 +30,9 @@ public class UserDAOTest extends TestCase {
     public void testName1() throws Exception {
         Connection root = DriverManager.getConnection("jdbc:mysql://103.60.126.50:3306/bravepeach", "USER", "pswd");
     }
+
+    @Test
+    public void ftpTest() throws Exception {
+
+    }
 }

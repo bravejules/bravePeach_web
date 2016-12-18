@@ -148,7 +148,7 @@
 
   </dependencies>
   <build>
-    <finalName>demos</finalName>
+    <finalName>ROOT</finalName>
     <plugins>
 
       <plugin>
