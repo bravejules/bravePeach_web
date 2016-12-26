@@ -9,6 +9,8 @@
 *{ font-family: 'NanumSquare', 'Nanum Gothic', sans-serif;}
 body {margin: 0;padding: 0;}
 ul, menu, dir { margin:0; padding:0;}
+a{cursor: pointer;}
+h1{font-size: 43px;}
 .pd0{padding:0 !important;}
 .datepicker table tr td.new, .datepicker table tr td.old {
     color: #D4D4D4 !important;
@@ -53,7 +55,7 @@ ul, menu, dir { margin:0; padding:0;}
 	background-image: linear-gradient(to top, var(--blush), var(--pastel-red));
 }
 
-.brave_container{width:880px; margin:0 auto;}
+.brave_container{width:880px; margin:0 auto;min-height: 500px;}
 
 footer{background: #424242;}
 .footer_container{width:1200px; margin:0 auto; height: 200px;}
