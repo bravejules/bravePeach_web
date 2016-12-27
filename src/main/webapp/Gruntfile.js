@@ -15,7 +15,9 @@ module.exports = function(grunt) {
             compile : {
                 files: {
                     //destination : [target list]
-                    "templates.js" : ["handlebar/*.hbs"]
+                    "dist/template.js" : ["handlebar/head.hbs", "handlebar/header.hbs", "handlebar/footer.hbs"],
+                    "dist/login.js" : ["handlebar/login.hbs"],
+                    "dist/main.js" : ["handlebar/main.hbs"],
                 }
             }
         },

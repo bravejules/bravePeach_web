@@ -1,29 +1,47 @@
-<div class="head_banner_bg">
+<div class="head_main_banner_bg">
 	<div class="head_banner_bg_blind"></div>
 	<div class="head_container">
-		<div class="head_text">
-			<h1>용감한 복숭아</h1>
-			<h4>역경매를 활용한 여행 준비 단계별<br/>
-				맞춤형 가이드 매칭 서비스
-			</h4>
+		<div class="head_main_text">
+			<div class="main_text">
+				<h4>겁니지만 세상이 너무나 궁금만 당신을 위해<br/>
+					1204명의 가이드가 기다리고 있습니다.
+				</h4>
+				<h1>어디로 가시나요?</h1>
+			</div>
 		</div>
 		<div class="col-xs-12 pd0">
-			<div class="head_signup_frame">
-				<div class="head_signup_area">
-					<a href="/login/signup_form" title="">
-						<div class="signup_btn btn_splash_pink">
-							<div class="text">
-								가이드로 시작하기
+			<div class="main_search_area SearchForm">
+				<div class="SearchForm_inputs_wrapper">
+					<div class="SearchForm_row">
+						<div class="SearchForm_location">
+							<label for="search-location" class="SearchForm_label">
+								<span>위치</span>
+							</label>
+							<div>
+								<div>
+									<input class="LocationInput input-large" name="location" type="text" placeholder="목적지, 도시명, 주소" autocomplete="off" id="search-location" value="">
+								</div>
+								<div class="DropDownWrapper col-md-12"></div>
 							</div>
 						</div>
-					</a>
-					<a href="/login/signup_form" title="">
-						<div class="signup_btn btn_splash_pink">
-							<div class="text">
-								여행자로 시작하기
+						<div class="SearchForm_dates text-left">
+							<label for="startDate" class="SearchForm__label" >
+								<span>날짜</span>
+							</label>
+							<div class="DateRangePicker">
+
 							</div>
 						</div>
-					</a>
+						<div class="SearchForm_guests text-left">
+							<label for="how-many-guests" class="SearchForm_label">
+								<span>인원</span>
+							</label>
+						</div>
+						<div class="SearchForm_submit text-left">
+							<button type="submit" class="btn btn-primary">숙소 검색
+							</button>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -31,10 +49,12 @@
 </div>
 <div class="col-xs-12 pd0">
 	<div class="brave_container">
-		<div class="main_signup_area">
-			<div class="btn_signup_facebook">
-
+		<div class="main_theme">
+			{{#main_theme}}
+			<div class="col-xs-4 theme_item">
+				<div style="background: url({{main_theme_img_url}}); height: 300px; background-size: cover;"></div>
 			</div>
+			{{/main_theme}}
 		</div>
 	</div>
 </div>

@@ -1,0 +1,6 @@
+this["Handlebars"] = this["Handlebars"] || {};
+this["Handlebars"]["templates"] = this["Handlebars"]["templates"] || {};
+
+this["Handlebars"]["templates"]["login"] = Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    return "<div class=\"head_login_banner_bg\">\n	<div class=\"head_login_banner_bg_blind\"></div>\n	<div class=\"head_container\">\n		<div class=\"head_text\">\n			<h1>용감한 복숭아</h1>\n			<h4>역경매를 활용한 여행 준비 단계별<br/>\n				맞춤형 가이드 매칭 서비스\n			</h4>\n		</div>\n		<div class=\"col-xs-12 pd0\">\n			<div class=\"head_signup_frame\">\n				<div class=\"head_signup_area\">\n					<a href=\"/login/signup_form\" title=\"\">\n						<div class=\"signup_btn btn_splash_pink\">\n							<div class=\"text\">\n								가이드로 시작하기\n							</div>\n						</div>\n					</a>\n					<a href=\"/login/signup_form\" title=\"\">\n						<div class=\"signup_btn btn_splash_pink\">\n							<div class=\"text\">\n								여행자로 시작하기\n							</div>\n						</div>\n					</a>\n				</div>\n			</div>\n		</div>\n	</div>\n</div>\n<div class=\"col-xs-12 pd0\">\n	<div class=\"brave_container\">\n		<div class=\"main_signup_area\">\n			<div class=\"btn_signup_facebook\">\n\n			</div>\n		</div>\n	</div>\n</div>";
+},"useData":true});
