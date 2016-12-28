@@ -8,9 +8,13 @@
   <name>bravePeach Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <properties>
-    <java-version>1.7</java-version>
+    <java-version>1.8</java-version>
     <spring.version>4.3.1.RELEASE</spring.version>
     <org.slf4j-version>1.6.6</org.slf4j-version>
+    <jdk-version>1.8</jdk-version>
+    <deploy-path>${basedir}/src/main/webapp</deploy-path>
+    <web.xml.base.dir>${deploy-path}/WEB-INF</web.xml.base.dir>
+    <source-encoding>utf-8</source-encoding>
   </properties>
 
   <dependencies>
@@ -150,7 +154,6 @@
   <build>
     <finalName>ROOT</finalName>
     <plugins>
-
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
@@ -162,6 +165,34 @@
           <compilerArgument>-Xlint:all</compilerArgument>
           <showWarnings>true</showWarnings>
           <showDeprecation>true</showDeprecation>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>${jdk-version}</source>
+          <target>${jdk-version}</target>
+          <encoding>${source-encoding}</encoding>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>2.4</version>
+        <configuration>
+          <warSourceDirectory>${basedir}/src/main/webapp/dist</warSourceDirectory>
+          <webResources>
+            <resource>
+              <directory>${basedir}/src/main/webapp/WEB-INF</directory>
+              <filtering>true</filtering>
+              <targetPath>WEB-INF</targetPath>
+              <includes>
+                <include>**/web.xml</include>
+              </includes>
+            </resource>
+          </webResources>
+          <webXml>${web.xml.base.dir}/web.xml</webXml>
         </configuration>
       </plugin>
     </plugins>
