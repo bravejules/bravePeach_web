@@ -18,6 +18,7 @@ module.exports = function(grunt) {
                     "dist/template.js" : ["handlebar/head.hbs", "handlebar/header.hbs", "handlebar/footer.hbs"],
                     "dist/login.js" : ["handlebar/login.hbs"],
                     "dist/main.js" : ["handlebar/main.hbs"],
+                    "dist/sign_up.js" : ["handlebar/sign_up.hbs"],
                 }
             }
         },

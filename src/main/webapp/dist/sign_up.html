@@ -31,7 +31,7 @@
 
     <!-- handlerbar js -->
     <script src="template.js"></script>
-    <script src="main.js"></script>
+    <script src="sign_up.js"></script>
 
     <script type="text/javascript">
 
@@ -45,31 +45,10 @@
 
 	$('body').append(header);
 
-	// 메인 
-	var main = Handlebars.templates.main;
+	// 본문 
+	var sign_up = Handlebars.templates.sign_up;
 
-	var main_data = {
-		main_theme :[
-		{ 
-			main_theme_img_url : "http://www.hanintel.com/boards/data/cheditor4/1307/MIs1bFuVCeySCZT.jpg", 
-			title : "미국 서부", 
-			text : "죽기전에 꼭 가야할 그곳"
-		},
-		{ 
-			main_theme_img_url : "http://media-se.escape.no/content/uploads/2014/10/norwegian-cruise-line-breakaway-new-york-aerial-1170x510.jpg", 
-			title : "뉴욕", 
-			text : "도시의 모든 것"
-		},
-		{ 
-			main_theme_img_url : "http://cfile206.uf.daum.net/image/2764C83552ACEDE534E302", 
-			title : "중국", 
-			text : "죽기전에 꼭 가야할 그곳"
-		}
-		]
-	}
-	var main_html = main(main_data);
-
-	$('body').append(main_html);
+	$('body').append(sign_up);
 
 	// 푸더 템플릿
 	var footer = Handlebars.templates.footer;

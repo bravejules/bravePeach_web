@@ -52,7 +52,15 @@
 		<div class="main_theme">
 			{{#main_theme}}
 			<div class="col-xs-4 theme_item">
-				<div style="background: url({{main_theme_img_url}}); height: 300px; background-size: cover;"></div>
+				<div style="background: url({{main_theme_img_url}}); height: 300px; background-size: cover;">
+					<div class="text_area">
+						<div class="intro_text">
+							<p>{{text}}</p>
+							<h2>{{title}}</h2>
+						</div>
+						<a title="{{title}}">View more</a>
+					</div>
+				</div>
 			</div>
 			{{/main_theme}}
 		</div>

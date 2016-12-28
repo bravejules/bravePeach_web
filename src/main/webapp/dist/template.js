@@ -6,7 +6,7 @@ this["Handlebars"]["templates"]["head"] = Handlebars.template({"compiler":[7,">=
 },"useData":true});
 
 this["Handlebars"]["templates"]["header"] = Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    return "<header id=\"header\" class=\"brave_head\">\n	<div class=\"main_logo\">\n		<a href=\"/\" title=\"\">\n			<img src=\"/assets/image/main_logo.png\" alt=\"\">\n		</a>\n	</div>\n\n	<div class=\"profile_img\">\n		<a href=\"/mypage/mypage_main\" title=\"\">\n			<img src=\"/assets/image/no_profile.png\" alt=\"\">\n		</a>\n	</div>\n	<div class=\"gnb\">\n		<ul>\n			<li><a href=\"/help.html\" title=\"도움말\">도움말</a></li>\n			<li><a href=\"/login.html\" title=\"로그인\">로그인</a></li>\n			<li><a href=\"/sign_up.html\" title=\"회원가입\">회원가입</a></li> \n			<li><a href=\"/guide/find_guide.html\" title=\"가이드 찾기\">가이드 하기</a></li>\n		</ul>\n	</div>\n\n</header><!-- /header -->\n";
+    return "<header id=\"header\" class=\"brave_head\">\n	<div class=\"main_logo\">\n		<a href=\"/\" title=\"\">\n			<img src=\"/assets/image/main_logo.png\" alt=\"\">\n		</a>\n	</div>\n\n	<div class=\"gnb\">\n		<ul>\n			<li><a href=\"/help.html\" title=\"도움말\">도움말</a></li>\n			<li><a href=\"/login.html\" title=\"로그인\">로그인</a></li>\n			<li><a href=\"/sign_up.html\" title=\"회원가입\">회원가입</a></li> \n			<li><a href=\"/guide/find_guide.html\" title=\"가이드 찾기\">가이드 하기</a></li>\n		</ul>\n	</div>\n\n</header><!-- /header -->\n";
 },"useData":true});
 
 this["Handlebars"]["templates"]["footer"] = Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
