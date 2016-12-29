@@ -15,10 +15,12 @@ module.exports = function(grunt) {
             compile : {
                 files: {
                     //destination : [target list]
-                    "dist/template.js" : ["handlebar/head.hbs", "handlebar/header.hbs", "handlebar/footer.hbs"],
-                    "dist/login.js" : ["handlebar/login.hbs"],
-                    "dist/main.js" : ["handlebar/main.hbs"],
-                    "dist/sign_up.js" : ["handlebar/sign_up.hbs"],
+                    "dist/template/template.js" : ["handlebar/head.hbs", "handlebar/header.hbs", "handlebar/footer.hbs"],
+                    "dist/template/login.js" : ["handlebar/login.hbs"],
+                    "dist/template/main.js" : ["handlebar/main.hbs"],
+                    "dist/template/sign_up.js" : ["handlebar/sign_up.hbs"],
+                    "dist/template/sign_up_form.js" : ["handlebar/sign_up_form.hbs"],
+                    "dist/template/sign_up_ok.js" : ["handlebar/sign_up_ok.hbs"],
                 }
             }
         },

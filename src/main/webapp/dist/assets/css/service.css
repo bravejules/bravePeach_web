@@ -112,6 +112,7 @@
 }
 .main_signup_area .or_area .or_hr{position: absolute; width:100%; margin-top:10px; border-bottom: 1px solid #ccc; z-index: -1;}
 .brave_form{margin:10px 0;}
+.brave_form input{height: 70px; line-height: 70px; border-radius: 10px; background-color: #f6f6f6;}
 
 @media (min-width: 768px){
 	

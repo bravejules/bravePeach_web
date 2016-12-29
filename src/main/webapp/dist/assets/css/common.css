@@ -15,6 +15,7 @@ body {margin: 0;padding: 0;}
 ul, menu, dir { margin:0; padding:0;}
 a{cursor: pointer;}
 h1{font-size: 43px;}
+a{color:#000 !important;}
 .pd0{padding:0 !important;}
 .datepicker table tr td.new, .datepicker table tr td.old {
 	color: #D4D4D4 !important;
