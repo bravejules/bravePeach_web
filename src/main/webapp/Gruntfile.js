@@ -22,6 +22,7 @@ module.exports = function(grunt) {
                     "dist/template/sign_up_form.js" : ["handlebar/sign_up_form.hbs"],
                     "dist/template/sign_up_ok.js" : ["handlebar/sign_up_ok.hbs"],
                     "dist/template/write_trip.js" : ["handlebar/write_trip.hbs"],
+                    "dist/template/trip_list.js" : ["handlebar/trip_list.hbs"],
                 }
             }
         },

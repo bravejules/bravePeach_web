@@ -115,6 +115,31 @@
 .brave_form{margin:10px 0;}
 .brave_form input{height: 70px; line-height: 70px; border-radius: 10px; background-color: #f6f6f6;}
 
+/*trip_list*/
+.trip_tab_area{}
+.trip_tab{height: 40px; background-color: #ccc; border-top-left-radius: 5px; border-top-right-radius: 5px;}
+.trip_tab.active{background-color: #e85450;}
+.trip_tab .text{width:100%; line-height: 40px; vertical-align: middle; text-align: center; color: #fff; cursor: pointer;}
+
+/*trip_list*/
+.trip_list_area{padding:0px 0px 50px 0px !important; border-top-left-radius: 10px; border-top-right-radius: 10px; border:1px solid #ccc;}
+.trip_list_object{width: 100%; height: 250px; border:1px solid #ccc; margin-top:50px;}
+.trip_list_object .thumbnail_img{float: left; width: 170px; height: 250px; background: url(/assets/image/travel_main.jpg) center no-repeat; background-size: cover;
+}
+.trip_list_object .description{float: left; width:530px; height: 250px;}
+.trip_list_object .description .chk_icons{padding-top:20px;}
+.trip_list_object .description .chk_icons .chked_icon{float: left; background-color: #ccc; border-radius: 50%; width:20px; height: 20px;
+}
+.trip_list_object .description .chk_icons .chked_icon.active{background-color: #e85450;}
+.trip_list_object .description .chk_icons .icon_text{float: left; padding:0 20px;}
+.trip_list_object .description .count_price_area .price{color: #e85450;}
+.trip_list_object .trip_chk_area{ display: table; float: right; width:170px; height: 250px; background-color: #e85450;}
+.trip_list_object .trip_chk_area .text{display: table-cell; height: 90px; color: #fff; vertical-align: middle; text-align: center;
+}
+.trip_list_object .trip_chk_area .close_btn{
+	width:20px; height: 20px; position: absolute; top:10px; right:10px; border-radius: 50%; background-color: #000; color: #fff; text-align: center; cursor: pointer;
+}
+
 @media (min-width: 768px){
 	
 }
