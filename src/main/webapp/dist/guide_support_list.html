@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body></body>
+	<!--[if lt IE 9]>
+	<script src="/assets/js/jquery-1.11.2.min.js"></script>
+	<![endif]-->
+	<!--[if gte IE 9]>
+	<script src="/assets/js/jquery-3.1.1.min.js"></script>
+	<![endif]-->
+	<!--[if !IE]> -->
+	<script src="/assets/js/jquery-3.1.1.min.js"></script>
+	<!-- <![endif]-->
+
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="/assets/plugin/bootstrap_3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/assets/plugin/bootstrap_3.3.7/css/bootstrap-theme.min.css">
+	<script src="/assets/plugin/bootstrap_3.3.7/js/bootstrap.min.js"></script>
+
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="/assets/js/html5shiv.js"></script>
+    <script type="text/javascript" src="/assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- jquery custom function -->
+    <script src="/assets/js/common.js"></script>
+
+
+    <script src="/assets/js/handlebars-v4.0.5.js"></script>
+
+    <!-- handlerbar js -->
+    <script src="template/template.js"></script>
+    <script src="template/guide_support_list.js"></script>
+
+    <script type="text/javascript">
+
+    // 공통 헤더 템플릿
+    var head = Handlebars.templates.head;
+
+    $('head').append(head);
+
+	// 헤더 템플릿
+	var header = Handlebars.templates.header;
+
+	$('body').append(header);
+
+	// 본문 
+	var guide_support_list = Handlebars.templates.guide_support_list;
+
+	var data = {
+		guide_support_list_data :[
+		{ 
+			test : "test", 
+		},
+		{ 
+			test : "test", 
+		},
+		{ 
+			test : "test", 
+		}
+		]
+	}
+
+	var guide_support_list_html = guide_support_list(data);
+
+	$('body').append(guide_support_list_html);
+
+	// 푸더 템플릿
+	var footer = Handlebars.templates.footer;
+	
+	$('body').append(footer);
+</script>
+</html>
