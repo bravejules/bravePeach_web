@@ -141,15 +141,34 @@
 }
 /*guide_support_list*/
 .guide_support_object{width: 100%; height: 250px; border:1px solid #ccc; margin-top:50px; border-radius: 20px;}
-.guide_support_object .thumbnail_img{float: left; width: 170px; height: 250px; background-color: #e85450; border-top-left-radius: 20px; border-bottom-left-radius: 20px;
+.guide_support_object .guide_thumbnail{float: left; width: 170px; height: 250px; background-color: #e85450; border-top-left-radius: 20px; border-bottom-left-radius: 20px;
 }
-.guide_support_object .description{float: left; width:530px; height: 250px;}
-.guide_support_object .description .chk_icons{padding-top:20px;}
-.guide_support_object .description .chk_icons .chked_icon{float: left; background-color: #ccc; border-radius: 50%; width:20px; height: 20px;
+.guide_support_object .guide_thumbnail .license_area{position: absolute; top:30px; width:130px; height: 30px; background-color: #fff; border-bottom-right-radius: 20px; border-top-right-radius: 20px;
 }
-.guide_support_object .description .chk_icons .chked_icon.active{background-color: #e85450;}
-.guide_support_object .description .chk_icons .icon_text{float: left; padding:0 20px;}
+.guide_support_object .guide_thumbnail .license_area .text{line-height: 30px; text-align: center; color: #e85450;}
+.guide_support_object .guide_thumbnail .name_area{margin-top:80px; width:100%; display: table;}
+.guide_support_object .guide_thumbnail .name_area .country_flag{float:left; width:30px; height: 30px; background: url(/assets/image/Flag_of_Italy.svg.png) center; background-size: cover; overflow: hidden; border-radius: 50%; margin-left:30px;
+}
+.guide_support_object .guide_thumbnail .name_area .name{float:left; line-height: 30px; vertical-align: middle; color: #fff; font-size: 23px; margin-left:20px;
+}
+.guide_support_object .guide_thumbnail .thumbnail_area{margin-top:15px; width:100%;}
+.guide_support_object .guide_thumbnail .thumbnail_img{width:100px; height: 100px; background: url(/assets/image/thumnail_sample.jpg) center; background-size: cover; overflow: hidden; border-radius: 50%; margin:0 auto;}
+.guide_support_object .description{float: left; width: 100%; position: absolute; padding-left: 170px; height: 250px;}
+.guide_support_object .description .info{width:330px; float: right; font-size: 16px;
+}
+.guide_support_object .description .rating_icons{}
+.guide_support_object .description .rating_icons .rating_icon{float: left; background-color: #ccc; border-radius: 50%; width:20px; height: 20px; margin:0 5px;
+}
+.description_top_area{border-bottom: 1px solid #e85450; padding:30px 0 10px 0;}
+.guide_support_object .description .rating_icons .rating_icon.active{background-color: #e85450;}
+.guide_support_object .description .rating_icons .icon_text{float: left; padding:0 20px;}
+.guide_support_object .description .guide_count{float: left; margin-left:30px;}
+.guide_support_object .description .review_count{float: left;}
 .guide_support_object .description .count_price_area .price{color: #e85450;}
+.guide_support_object .description .like{position: absolute; background-color: #ccc; border-radius: 50%; width: 30px;
+    height: 30px;bottom:20px; right: 25px;
+}
+.guide_support_object .description .like.active{background-color: #e85450;}
 
 @media (min-width: 768px){
 	

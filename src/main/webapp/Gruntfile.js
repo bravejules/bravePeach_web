@@ -25,6 +25,7 @@ module.exports = function(grunt) {
                     "dist/template/trip_list.js" : ["handlebar/trip_list.hbs"],
                     "dist/template/help.js" : ["handlebar/help.hbs"],
                     "dist/template/guide_support_list.js" : ["handlebar/guide_support_list.hbs"],
+                    "dist/template/html_list.js" : ["handlebar/html_list.hbs"],
                 }
             }
         },
