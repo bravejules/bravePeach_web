@@ -62,7 +62,7 @@ a{color:#000;}
 
 .brave_container{width:880px; margin:0 auto;min-height: 500px;}
 
-footer{background: #424242;}
+footer{background: #424242; margin-top:20px;}
 .footer_container{width:1200px; margin:0 auto; height: 200px;}
 .footer_container .foot_menu{width:600px; margin:15px auto; margin-top:35px;}
 .footer_container .foot_menu ul{list-style: none; display: table; margin: 0 auto;}
