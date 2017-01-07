@@ -1,8 +1,7 @@
-package model;
+package com.bravepeach.www.model;
 import org.apache.ibatis.type.Alias;
 
 import java.sql.Timestamp;
-import java.util.Date;
 
 /**
  * Created by Naver on 2016-12-26.

@@ -1,4 +1,4 @@
-package model;
+package com.bravepeach.www.model;
 
 import java.util.Date;
 

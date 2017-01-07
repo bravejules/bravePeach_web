@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="mapper.UserInterface">
-    <resultMap id="member" type="model.Member">
+<mapper namespace="com.bravepeach.www.mapper.UserInterface">
+    <resultMap id="member" type="com.bravepeach.www.model.Member">
         <id column="mb_no" property="mbNo"/>
         <result column="mb_id" property="mbId"/>
         <result column="mb_password" property="mbPswd"/>
@@ -26,7 +26,7 @@
         <result column="version" property="version"/>
         <result column="hidden" property="hidden"/>
     </resultMap>
-    <resultMap id="loginMember" type="model.User">
+    <resultMap id="loginMember" type="com.bravepeach.www.model.User">
         <id column="mb_no" property="id"/>
         <result column="mb_password" property="password"/>
         <result column="mb_name" property="name"/>
@@ -34,10 +34,64 @@
     <select id="selectTest" resultMap="member">
         select * from member;
     </select>
-    <select id="login" resultMap="loginMember" parameterType="model.User">
+    <select id="login" resultMap="loginMember" parameterType="com.bravepeach.www.model.User">
         select mb_id, mb_password, mb_name
         FROM member
         WHERE
-         mb_id = #{id} and mb_password = #{password};
+         mb_id = #{id} and mb_password = md5(#{password});
     </select>
+    <update id="updateMemberIPInfo" parameterType="com.bravepeach.www.model.User">
+        UPDATE member SET update_ip = #{updateIp} AND login_datetime =  sysdate() WHERE mb_id = #{mb_id};
+    </update>
+    <insert id="signUp" parameterType="com.bravepeach.www.model.Member">
+        INSERT
+        INTO member (
+        mb_id,
+        mb_password,
+        mb_level,
+        mb_name,
+        mb_phone,
+        mb_address,
+        mb_address_extra,
+        mb_gender,
+        mb_birthday,
+        mb_city,
+        mb_profile_path,
+        reg_ip,
+        terms1,
+        terms2,
+        terms3,
+        terms4,
+        <if test="version != ''">
+            version,
+        </if>
+        <if test="hidden != ''">
+        hidden
+        </if>
+        )
+        VALUES (
+        #{mbId},
+        md5(#{mbPswd}),
+        #{mbLevel},
+        #{mbName},
+        #{mbPhone},
+        #{mbAddress},
+        #{mbAddressExtra},
+        #{mbGender},
+        #{mbBirthday},
+        #{mbCity},
+        #{mbProfileImgId},
+        #{regIp},
+        #{terms1},
+        #{terms2},
+        #{terms3},
+        #{terms4},
+        <if test="version != ''">
+            #{version},
+        </if>
+        <if test="hidden != ''">
+            #{hidden}
+        </if>
+        )
+    </insert>
 </mapper>

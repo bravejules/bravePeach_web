@@ -1,6 +1,6 @@
-package repository;
+package com.bravepeach.www.repository;
 
-import model.User;
+import com.bravepeach.www.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**

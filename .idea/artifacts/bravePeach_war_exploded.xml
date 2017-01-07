@@ -34,6 +34,10 @@
           <element id="library" level="project" name="Maven: org.springframework.data:spring-data-commons-core:1.1.0.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-orm:3.0.5.RELEASE" />
           <element id="library" level="project" name="Maven: org.aspectj:aspectjrt:1.6.8" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-core:3.2.5.RELEASE" />
+          <element id="library" level="project" name="Maven: aopalliance:aopalliance:1.0" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-config:3.2.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-web:3.2.5.RELEASE" />
         </element>
       </element>
       <element id="directory" name="META-INF">

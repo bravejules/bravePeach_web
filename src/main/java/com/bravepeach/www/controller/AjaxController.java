@@ -1,4 +1,4 @@
-package demo.controller;
+package com.bravepeach.www.controller;
 
 import org.springframework.stereotype.Controller;
 

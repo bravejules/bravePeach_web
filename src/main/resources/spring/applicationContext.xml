@@ -8,4 +8,5 @@
 
     <import resource="context-database.xml"></import>
     <import resource="dispatcher-servlet.xml"></import>
+    <import resource="spring-security.xml"></import>
 </beans>
