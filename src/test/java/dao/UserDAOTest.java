@@ -1,6 +1,7 @@
 package dao;
 
 import junit.framework.TestCase;
+import model.User;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,6 +34,11 @@ public class UserDAOTest extends TestCase {
 
     @Test
     public void ftpTest() throws Exception {
+    }
 
+    @Test
+    public void loginTest() throws Exception {
+        User login = userDao.login(new User("logintest", "pswd"));
+        System.out.println(login);
     }
 }

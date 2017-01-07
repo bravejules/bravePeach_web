@@ -1,5 +1,6 @@
 package mapper;
 
+import model.User;
 import org.apache.ibatis.annotations.Select;
 import org.springframework.stereotype.Repository;
 
@@ -12,4 +13,5 @@ import java.util.Map;
 
 public interface UserInterface {
     List selectTest();
+    User login(User user);
 }
