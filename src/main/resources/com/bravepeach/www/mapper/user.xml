@@ -27,7 +27,7 @@
         <result column="hidden" property="hidden"/>
     </resultMap>
     <resultMap id="loginMember" type="com.bravepeach.www.model.User">
-        <id column="mb_no" property="id"/>
+        <id column="mb_id" property="id"/>
         <result column="mb_password" property="password"/>
         <result column="mb_name" property="name"/>
     </resultMap>
@@ -41,7 +41,7 @@
          mb_id = #{id} and mb_password = md5(#{password});
     </select>
     <update id="updateMemberIPInfo" parameterType="com.bravepeach.www.model.User">
-        UPDATE member SET update_ip = #{updateIp} AND login_datetime =  sysdate() WHERE mb_id = #{mb_id};
+        UPDATE member SET update_ip = #{ip} AND login_datetime =  sysdate() WHERE mb_id = #{mb_id};
     </update>
     <insert id="signUp" parameterType="com.bravepeach.www.model.Member">
         INSERT
