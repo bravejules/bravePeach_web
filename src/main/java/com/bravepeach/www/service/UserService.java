@@ -26,7 +26,7 @@ public class UserService {
         }
         User login = userDAO.login(user);
         //userDAO.updateMemberIPInfo(user);
-        if(null != login) {
+        if(null == login) {
             return null;
         } else {
             logger.info("로그인 한 계정" + user.getId());
