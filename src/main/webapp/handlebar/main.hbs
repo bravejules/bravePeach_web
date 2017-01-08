@@ -3,7 +3,7 @@
 	<div class="head_container">
 		<div class="head_main_text">
 			<div class="main_text">
-				<h4>겁니지만 세상이 너무나 궁금만 당신을 위해<br/>
+				<h4>겁내지만 세상이 너무나 궁금만 당신을 위해<br/>
 					1204명의 가이드가 기다리고 있습니다.
 				</h4>
 				<h1>어디로 가시나요?</h1>
@@ -38,7 +38,7 @@
 							</label>
 						</div>
 						<div class="SearchForm_submit text-left">
-							<button type="submit" class="btn btn-primary">숙소 검색
+							<button type="submit" class="btn btn-primary">가이드 검색
 							</button>
 						</div>
 					</div>
@@ -49,10 +49,13 @@
 </div>
 <div class="col-xs-12 pd0">
 	<div class="brave_container">
+		{{!--  --}}
 		<div class="main_theme">
 			{{#main_theme}}
 			<div class="col-xs-4 theme_item">
-				<div style="background: url({{main_theme_img_url}}); height: 300px; background-size: cover;">
+				<div class="main_theme_over_bg">
+					<div style="background: url({{main_theme_img_url}}); height: 300px; background-size: cover; position: relative; z-index: -1;">
+					</div>
 					<div class="text_area">
 						<div class="intro_text">
 							<p>{{text}}</p>
@@ -65,10 +68,14 @@
 			{{/main_theme}}
 		</div>
 		<div class="clearfix"></div>
+		{{!--  --}}
+		{{!--  --}}
 		<div class="main_theme">
 			{{#main_theme}}
 			<div class="col-xs-4 theme_item">
-				<div style="background: url({{main_theme_img_url}}); height: 300px; background-size: cover;">
+				<div class="main_theme_over_bg">
+					<div style="background: url({{main_theme_img_url}}); height: 300px; background-size: cover; position: relative; z-index: -1;">
+					</div>
 					<div class="text_area">
 						<div class="intro_text">
 							<p>{{text}}</p>
@@ -81,10 +88,14 @@
 			{{/main_theme}}
 		</div>
 		<div class="clearfix"></div>
+		{{!--  --}}
+		{{!--  --}}
 		<div class="main_theme">
 			{{#main_theme}}
 			<div class="col-xs-4 theme_item">
-				<div style="background: url({{main_theme_img_url}}); height: 300px; background-size: cover;">
+				<div class="main_theme_over_bg">
+					<div style="background: url({{main_theme_img_url}}); height: 300px; background-size: cover; position: relative; z-index: -1;">
+					</div>
 					<div class="text_area">
 						<div class="intro_text">
 							<p>{{text}}</p>
@@ -97,18 +108,12 @@
 			{{/main_theme}}
 		</div>
 		<div class="clearfix"></div>
+		{{!--  --}}
 	</div>
 </div>
 <script type="text/javascript">
-$(window).scroll(function( )  //스크롤이 움직일때마다 이벤트 발생
-{
-	var position = $(window).scrollTop(); // 현재 스크롤바의 위치값을 반환합니다.
-	if (position > 500) {
-		$('.brave_head').addClass('brave_fixed_head');
-	}
-	else{
-		$('.brave_head').removeClass('brave_fixed_head');
-	}
+$(document).ready(function(){
+	$('.brave_head').addClass('main_brave_head');
 });
 
 </script>

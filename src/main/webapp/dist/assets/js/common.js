@@ -24,3 +24,15 @@ function phoneNumberFormat(src) {
 	}
 	return retValue;
 }
+
+// 일정 위치이상 스크롤시 헤더 고정
+$(window).scroll(function( )  //스크롤이 움직일때마다 이벤트 발생
+{
+	var position = $(window).scrollTop(); // 현재 스크롤바의 위치값을 반환합니다.
+	if (position > 500) {
+		$('.brave_head').addClass('brave_fixed_head');
+	}
+	else{
+		$('.brave_head').removeClass('brave_fixed_head');
+	}
+});
