@@ -30,13 +30,14 @@ public class LoginAuthenticationFactory implements AuthenticationProvider{
         String userId = (String)authentication.getPrincipal();
         String userPw = (String)authentication.getCredentials();
 
-        if(null != userService.login(new User(userId, userPw))) {
+        User user = userService.login(new User(userId, userPw));
+        if(null != user) {
             logger.info("Login Success");
             List<GrantedAuthority> roles = new ArrayList<GrantedAuthority>();
             roles.add(new SimpleGrantedAuthority("ROLE_USER"));
 
             UsernamePasswordAuthenticationToken result = new UsernamePasswordAuthenticationToken(userId, userPw, roles);
-            result.setDetails(new User(userId, userPw));
+            result.setDetails(user);
             return result;
         } else {
             logger.info("사용자 크리덴셜 정보가 틀립니다.");

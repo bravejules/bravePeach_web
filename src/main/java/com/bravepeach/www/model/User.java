@@ -1,5 +1,6 @@
 package com.bravepeach.www.model;
 
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -84,7 +85,6 @@ public class User implements UserDetails{
     public String toString() {
         final StringBuffer sb = new StringBuffer("User{");
         sb.append("id='").append(id).append('\'');
-        sb.append(", password='").append(password).append('\'');
         sb.append(", name='").append(name).append('\'');
         sb.append('}');
         return sb.toString();

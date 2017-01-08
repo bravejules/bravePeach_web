@@ -30,4 +30,11 @@ public class MainController {
         return "redirect:/";
     }
 
+    @RequestMapping(value = "logout", method = RequestMethod.GET)
+    public String logout(HttpSession session) {
+        User user = (User)SecurityContextHolder.getContext().getAuthentication().getDetails();
+        logger.info("Logout " + user.getId());
+        session.invalidate();
+        return "redirect:/";
+    }
 }
