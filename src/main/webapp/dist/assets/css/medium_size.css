@@ -1,0 +1,41 @@
+nav{
+    margin-top: 8px;
+    height: auto;
+}
+
+.nav-menubar{
+    display: inline;
+    width: 4.5%;
+    max-width: 45px;
+    position: absolute;
+    top: 3px;
+    left: 19px;
+}
+
+.nav-guide-search-wrapper{
+    display: none;
+}
+
+.nav-bravepeach-logo{
+    display: block;
+    margin: auto;
+    width: 32%;
+    max-width: 264px;
+}
+
+.nav-guide-search-dropdown{
+    display: inline;
+    width: 4.1%;
+    max-width: 45px;
+    position: absolute;
+    top: 4px;
+    right: 18px;
+}
+
+.nav-list{
+    display: none;
+}
+
+.main-container{
+    margin-top: 24px;
+}

@@ -7,17 +7,14 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" media="screen and (max-width: 769px)" href="assets/css/moblie.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   <title></title>
   </head>
   <body>
       <nav class="nav-general">
-          <img class="nav-menubar" src="assets/image/icon/menu_bar.png" alt="메뉴바">
-          <img class="nav-bravepeach-logo" src="assets/image/icon/logo_bravepeach.png" alt="용감한 로고">
-          <div class="nav-guide-search-wrapper">
-            <img class="nav-guide-search-icon" src="assets/image/icon/Search%20Icon.png" alt="돋보기 아이콘">
-            <input class="nav-guide-search" type="text" placeholder="원하는 지역의 가이드를 검색해 보세요!">
-          </div>
-            <img class="nav-guide-search-dropdown" src="assets/image/icon/Search%20Icon.png" alt="검색 아이콘">
+        <script>
+            $(".nav-general").load("template/nav_general.html");  
+        </script>
       </nav>
       <div class="main-container">
         <section name="top">
@@ -159,5 +156,10 @@
          <a class="page-up-button" href="#top"><img class="page-up-icon" src="assets/image/icon/go_up.png">
          </a>
       </div>
+      <footer class="footer_container">
+        <script>
+            $(".footer_container").load("template/footer.html");  
+        </script>
+      </footer>
   </body>
 </html>

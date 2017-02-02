@@ -10,7 +10,7 @@ nav{
 
 .nav-menubar{
     display: inline;
-    width: 4.1%;
+    width: 4.5%;
     position: absolute;
     top: 3px;
     left: 19px;
@@ -29,10 +29,14 @@ nav{
 
 .nav-guide-search-dropdown{
     display: inline;
-    width: 3.8%;
+    width: 4.1%;
     position: absolute;
     top: 4px;
     right: 18px;
+}
+
+.nav-list{
+    display: none;
 }
 
 .main-container{
@@ -180,8 +184,8 @@ nav{
 
 .page-up-button{
     display: block;
-    width: 44px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     position: fixed;
     bottom: 28px;
     right: 14px;
