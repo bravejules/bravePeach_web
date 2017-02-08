@@ -15,7 +15,7 @@ module.exports = function(grunt) {
             compile : {
                 files: {
                     //destination : [target list]
-                    "dist/template/template.js" : ["handlebar/head.hbs", "handlebar/header.hbs", "handlebar/footer.hbs"],
+                    "dist/template/template.js" : ["handlebar/head.hbs", "handlebar/header.hbs", "handlebar/footer.hbs", "handlebar/nav_general.hbs"],
                     "dist/template/login.js" : ["handlebar/login.hbs"],
                     "dist/template/main.js" : ["handlebar/main.hbs"],
                     "dist/template/sign_up.js" : ["handlebar/sign_up.hbs"],
@@ -27,6 +27,9 @@ module.exports = function(grunt) {
                     "dist/template/guide_support_list.js" : ["handlebar/guide_support_list.hbs"],
                     "dist/template/html_list.js" : ["handlebar/html_list.hbs"],
                     "dist/template/message_list.js" : ["handlebar/message_list.hbs"],
+                    "dist/template/welcome.js" : ["handlebar/welcome.hbs"],
+                    "dist/template/enroll_trip.js" : ["handlebar/enroll_trip.hbs"],
+                    "dist/template/find_guide.js" : ["handlebar/find_guide.hbs"]
                 }
             }
         },

@@ -1,119 +1,133 @@
-<div class="head_main_banner_bg">
-	<div class="head_banner_bg_blind"></div>
-	<div class="head_container">
-		<div class="head_main_text">
-			<div class="main_text">
-				<h4>겁내지만 세상이 너무나 궁금만 당신을 위해<br/>
-					1204명의 가이드가 기다리고 있습니다.
-				</h4>
-				<h1>어디로 가시나요?</h1>
-			</div>
-		</div>
-		<div class="col-xs-12 pd0">
-			<div class="main_search_area SearchForm">
-				<div class="SearchForm_inputs_wrapper">
-					<div class="SearchForm_row">
-						<div class="SearchForm_location">
-							<label for="search-location" class="SearchForm_label">
-								<span>위치</span>
-							</label>
-							<div>
-								<div>
-									<input class="LocationInput input-large" name="location" type="text" placeholder="목적지, 도시명, 주소" autocomplete="off" id="search-location" value="">
-								</div>
-								<div class="DropDownWrapper col-md-12"></div>
-							</div>
-						</div>
-						<div class="SearchForm_dates text-left">
-							<label for="startDate" class="SearchForm__label" >
-								<span>날짜</span>
-							</label>
-							<div class="DateRangePicker">
+<div class="main-header">
+            
+            <div class="head-container">
+                <div class="main-message">
+                    <h2>겁나지만 세상이 너무나 궁금한 당신을 위해<br>1204명의 가이드가 기다리고 있습니다.</h2>
+                    <h1>어디로 가시나요?</h1>
+                </div>
+                
+                <div class="main-mobile-logo-wrapper">
+                    <img class="main-mobile-logo" src="assets/image/icon/logo_bravepeach.png">
+                </div>
+                
+                <div class="main-form-wrapper">
+                    <div class="col-sm-3 main-form" style="border-radius: 8px 0px 0px 8px;">
+                        <span class="form-name">위치</span>
 
-							</div>
-						</div>
-						<div class="SearchForm_guests text-left">
-							<label for="how-many-guests" class="SearchForm_label">
-								<span>인원</span>
-							</label>
-						</div>
-						<div class="SearchForm_submit text-left">
-							<button type="submit" class="btn btn-primary">가이드 검색
-							</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="col-xs-12 pd0">
-	<div class="brave_container">
-		{{!--  --}}
-		<div class="main_theme">
-			{{#main_theme}}
-			<div class="col-xs-4 theme_item">
-				<div class="main_theme_over_bg">
-					<div style="background: url({{main_theme_img_url}}); height: 300px; background-size: cover; position: relative; z-index: -1;">
-					</div>
-					<div class="text_area">
-						<div class="intro_text">
-							<p>{{text}}</p>
-							<h2>{{title}}</h2>
-						</div>
-						<a title="{{title}}">View more</a>
-					</div>
-				</div>
-			</div>
-			{{/main_theme}}
-		</div>
-		<div class="clearfix"></div>
-		{{!--  --}}
-		{{!--  --}}
-		<div class="main_theme">
-			{{#main_theme}}
-			<div class="col-xs-4 theme_item">
-				<div class="main_theme_over_bg">
-					<div style="background: url({{main_theme_img_url}}); height: 300px; background-size: cover; position: relative; z-index: -1;">
-					</div>
-					<div class="text_area">
-						<div class="intro_text">
-							<p>{{text}}</p>
-							<h2>{{title}}</h2>
-						</div>
-						<a title="{{title}}">View more</a>
-					</div>
-				</div>
-			</div>
-			{{/main_theme}}
-		</div>
-		<div class="clearfix"></div>
-		{{!--  --}}
-		{{!--  --}}
-		<div class="main_theme">
-			{{#main_theme}}
-			<div class="col-xs-4 theme_item">
-				<div class="main_theme_over_bg">
-					<div style="background: url({{main_theme_img_url}}); height: 300px; background-size: cover; position: relative; z-index: -1;">
-					</div>
-					<div class="text_area">
-						<div class="intro_text">
-							<p>{{text}}</p>
-							<h2>{{title}}</h2>
-						</div>
-						<a title="{{title}}">View more</a>
-					</div>
-				</div>
-			</div>
-			{{/main_theme}}
-		</div>
-		<div class="clearfix"></div>
-		{{!--  --}}
-	</div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){
-	$('.brave_head').addClass('main_brave_head');
-});
+                    </div>
 
-</script>
+                    <div class="col-sm-3 main-form">
+                        <span class="form-name">날짜</span>
+
+                    </div>
+
+                    <div class="col-sm-3 main-form">
+                        <span class="form-name">인원</span>
+
+                    </div>
+
+                    <div class="col-xs-3 main-form-button">
+
+                    </div>
+                </div>
+                
+                <div class="main-mobile-form-wrapper">
+                    <img class="search-icon" src="assets/image/icon/Search%20Icon.png">
+                    <input type="text" class="main-mobile-form" placeholder="원하는 지역의 가이드를 검색해보세요!">
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="main-container">
+      
+            <div class="thumbnail-wrapper"> 
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="main-thumbnail red-sunset">
+                            <div class="overlay">
+                                <h4>모두의 핫플레이스</h4>
+                                <h3>보라카이</h3>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="main-thumbnail mountain">
+                            <div class="overlay">
+                                <h4>죽기전에 꼭 가야할 그 곳</h4>
+                                <h3>미국 서부</h3>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="main-thumbnail waiting">
+                            <div class="overlay">
+                                <h4>도시의 모든 것</h4>
+                                <h3>뉴욕</h3>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            
+            <div class="thumbnail-wrapper"> 
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="main-thumbnail red-sunset">
+                            <div class="overlay">
+                                <h4>모두의 핫플레이스</h4>
+                                <h3>보라카이</h3>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="main-thumbnail mountain">
+                            <div class="overlay">
+                                <h4>죽기전에 꼭 가야할 그 곳</h4>
+                                <h3>미국 서부</h3>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="main-thumbnail waiting">
+                            <div class="overlay">
+                                <h4>도시의 모든 것</h4>
+                                <h3>뉴욕</h3>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            
+            <div class="thumbnail-wrapper"> 
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="main-thumbnail red-sunset">
+                            <div class="overlay">
+                                <h4>모두의 핫플레이스</h4>
+                                <h3>보라카이</h3>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="main-thumbnail mountain">
+                            <div class="overlay">
+                                <h4>죽기전에 꼭 가야할 그 곳</h4>
+                                <h3>미국 서부</h3>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="main-thumbnail waiting">
+                            <div class="overlay">
+                                <h4>도시의 모든 것</h4>
+                                <h3>뉴욕</h3>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            
+        </div>
+  

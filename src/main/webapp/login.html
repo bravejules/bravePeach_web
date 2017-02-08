@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    </head>
+    <body></body>
+    <script src="assets/js/handlebars-v4.0.5.js"></script>
+    <script src="dist/template/template.js"></script>
+    <script src="dist/template/login.js"></script>
+    <script>
+        
+        // 공통 헤더 템플릿
+        var head = Handlebars.templates.head;
+
+        $('head').append(head);
+
+        // 메인 
+        var login = Handlebars.templates.login;
+
+        $('body').append(login);
+        
+        // 푸더 템플릿
+        var footer = Handlebars.templates.footer;
+
+        $('body').append(footer);
+    </script>
+</html>
