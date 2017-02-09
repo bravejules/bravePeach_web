@@ -176,6 +176,10 @@ nav{
     z-index: 1;
 }
 
+nav img:hover{
+    cursor: pointer;
+}
+
 a, button{
     cursor: pointer;
 }
@@ -224,7 +228,9 @@ button:focus {outline:0;}
     }
 
 @media screen and (min-width: 1440px){
-    
+    .nav-guide-search-wrapper{
+        width: 
+    }
 }
 
 .nav-list li{
@@ -616,14 +622,14 @@ body{
     opacity: 1;
 }
 
-footer{background: #424242; margin-top:20px; width:100%; position: absolute; font-size: 20px;}
+footer{background: #424242; margin-top:20px; width:100%; position: absolute; font-size: 20px; text-align: center;}
 .foot_menu{width: 775px; margin:auto; margin-top:75px;}
 .foot_menu ul{width: 100%;list-style: none; display: table; margin: 0 auto; padding: 0px;}
 .foot_menu ul li{float:left; margin:0;}
 .foot_menu ul li a{ color:#fff;}
-.foot_menu ul li a:hover{text-decoration: none; color: #da4d44; color: var(--pale-red);}
+.foot_menu ul li a:hover{text-decoration: none; color: #da4d44; color: #e64c47;}
 .info{text-align: center; color:#ccc; font-size:13px;margin-top:89px;}
-.copyright{text-align: center; color:#ccc; font-size:13px;margin-top:177px; margin-bottom: 74px;}
+.copyright{text-align: center; color:#ccc; font-size:13px;margin-top:89px; margin-bottom: 74px;}
 
 
 
@@ -723,3 +729,28 @@ footer{background: #424242; margin-top:20px; width:100%; position: absolute; fon
 
 .welcome-enroll-trip-button{background-color: #e64c47; margin: 23px auto;}
 .welcome-find-guide-button{background-color: #606060; margin: auto;}
+.side_menu_wrapper, .search_side_menu_wrapper{display: none; overflow-y: auto;}
+
+/* calender */
+
+.ui-datepicker{
+    width: 689px;
+    height: 430px;
+    border-radius: 8px;
+    border: 1px solid #d4d4d4;
+    text-align: center;
+    background-color: white;
+}
+
+.ui-datepicker a{
+    color: black;
+}
+
+.ui-datepicker-header{width: 235px; margin: auto; margin-top: 30px; font-size: 32px;}
+.ui-datepicker-prev{float: left; color: #606060 !important;}
+.ui-datepicker-next{float: right; color: #606060 !important;}
+
+.ui-datepicker-calendar{margin-top: 20px; width: 95%; height: 75%; font-size: 24px;}
+.ui-state-default{display: block; border-radius: 8px; width: 50px; height: 50px; margin: auto; padding-top: 10px;}
+a.ui-state-default:hover{background-color: #e64c47; color: white;}
+.ui-datepicker-unselectable{color: #d3d3d3;}

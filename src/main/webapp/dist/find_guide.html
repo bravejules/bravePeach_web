@@ -2,6 +2,34 @@
 <html>
     <head>
         <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="assets/js/jquery-ui.min.js"></script>
+        <script>
+            $(function(){
+                $('.datepicker1, .datepicker2').datepicker({
+                    showAnim: "slideDown",
+                    minDate: 0,
+                    dateFormat: 'yy.mm.dd',
+                    prevText: '<',
+                    nextText: '>',
+                    monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
+                    monthNamesShort: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
+                    dayNames: ['sun','mon','tue','wed','thu','fri','sat'],
+                    dayNamesShort: ['sun','mon','tue','wed','thu','fri','sat'],
+                    dayNamesMin: ['sun','mon','tue','wed','thu','fri','sat'],
+                    showMonthAfterYear: true,
+                    yearSuffix: '년',
+                    onSelect: function(date){            
+                        var date1 = $('.datepicker1').datepicker('getDate');           
+                        var date = new Date( Date.parse( date1 ) ); 
+                        date.setDate( date.getDate() + 1 );        
+                        var newDate = date.toDateString(); 
+                        newDate = new Date( Date.parse( newDate ) );                      
+                        $('.datepicker2').datepicker("option","minDate",newDate);
+                    }
+                });                
+                
+            });
+        </script>
     </head>
     <body></body>
     <script src="assets/js/handlebars-v4.0.5.js"></script>
@@ -13,6 +41,11 @@
         var head = Handlebars.templates.head;
 
         $('head').append(head);
+        
+        var nav = Handlebars.templates.nav_general;
+        
+        $('body').append(nav);
+
  
         var find_guide = Handlebars.templates.find_guide;
 
@@ -22,5 +55,38 @@
         var footer = Handlebars.templates.footer;
 
         $('body').append(footer);
+        
+        $(function(){            
+            var isMenuClicked = 0;
+            $('.nav-menubar').click(function() {
+                isMenuClicked = (isMenuClicked + 1) % 2;
+                $('.side_menu_wrapper').slideToggle();
+                
+                if(isMenuClicked) {
+                    $(this).attr('src', 'assets/image/icon/cancel.png');
+                    $('.nav-guide-search-dropdown').hide("200");
+                }
+                else{
+                    $(this).attr('src','assets/image/icon/menu_bar.png');
+                    $('.nav-guide-search-dropdown').show("200");
+                }
+            });
+            
+            var isSearchClicked = 0;
+            $('.nav-guide-search-dropdown').click(function() {
+                isSearchClicked = (isSearchClicked + 1) % 2;
+                $('.search_side_menu_wrapper').slideToggle();
+                
+                if(isSearchClicked) {
+                    $(this).attr('src', 'assets/image/icon/cancel.png');
+                    $('.nav-menubar').hide("200");
+            
+                }
+                else{
+                    $(this).attr('src','assets/image/icon/Search%20Icon.png');
+                    $('.nav-menubar').show("200");
+                }
+            });
+        });
     </script>
 </html>
